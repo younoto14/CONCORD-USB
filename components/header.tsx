@@ -57,7 +57,7 @@ export function Header() {
               alt="Concord Logo"
               width={180}
               height={50}
-              className="h-10 w-auto"
+              className="h-10 w-auto mix-blend-screen"
             />
           </Link>
 
