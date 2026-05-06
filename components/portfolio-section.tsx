@@ -89,7 +89,7 @@ export function PortfolioSection() {
   return (
     <section id="portfolio" className="py-24 md:py-32 relative overflow-hidden bg-secondary/30">
       {/* Background Elements */}
-      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-white/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 lg:px-8" ref={ref}>
         {/* Section Header */}

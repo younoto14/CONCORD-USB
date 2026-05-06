@@ -77,7 +77,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 lg:px-8" ref={ref}>
         {/* Section Header */}
@@ -85,7 +85,7 @@ export function ContactSection() {
           "text-center max-w-3xl mx-auto mb-16 transition-all duration-700",
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         )}>
-          <span className="inline-block px-4 py-1.5 rounded-full glass-card text-sm text-blue-400 mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full glass-card text-sm text-white mb-4">
             Get in Touch
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
@@ -107,8 +107,8 @@ export function ContactSection() {
             
             {isSubmitted ? (
               <div className="text-center py-12">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-500/20 flex items-center justify-center">
-                  <Send className="w-8 h-8 text-blue-400" />
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+                  <Send className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-2">Message Sent!</h4>
                 <p className="text-muted-foreground">
@@ -128,7 +128,7 @@ export function ContactSection() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="John Doe"
-                    className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground focus:border-blue-500 focus:ring-blue-500/20"
+                    className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground focus:border-white focus:ring-white/20"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ export function ContactSection() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="john@example.com"
-                    className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground focus:border-blue-500 focus:ring-blue-500/20"
+                    className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground focus:border-white focus:ring-white/20"
                   />
                 </div>
 
@@ -158,7 +158,7 @@ export function ContactSection() {
                     value={formData.project}
                     onChange={(e) => setFormData({ ...formData, project: e.target.value })}
                     placeholder="Tell us about your project..."
-                    className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-muted-foreground focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none resize-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-muted-foreground focus:border-white focus:ring-2 focus:ring-white/20 outline-none resize-none transition-all"
                   />
                 </div>
 
@@ -170,7 +170,7 @@ export function ContactSection() {
                     id="budget"
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all appearance-none cursor-pointer"
+                    className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-white focus:ring-2 focus:ring-white/20 outline-none transition-all appearance-none cursor-pointer"
                     style={{ backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`, backgroundPosition: 'right 0.5rem center', backgroundRepeat: 'no-repeat', backgroundSize: '1.5em 1.5em' }}
                   >
                     {budgetOptions.map((option) => (
@@ -184,7 +184,7 @@ export function ContactSection() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg disabled:opacity-50"
+                  className="w-full bg-white hover:bg-white/90 text-black py-6 text-lg disabled:opacity-50"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
@@ -216,10 +216,10 @@ export function ContactSection() {
                 <a
                   key={index}
                   href={item.href}
-                  className="flex items-center gap-4 glass-card rounded-xl p-5 hover:border-blue-500/30 transition-all group"
+                  className="flex items-center gap-4 glass-card rounded-xl p-5 hover:border-white/30 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition-colors">
-                    <item.icon className="w-6 h-6 text-blue-400" />
+                  <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                    <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <span className="text-xs text-muted-foreground uppercase tracking-wider">{item.label}</span>
@@ -240,7 +240,7 @@ export function ContactSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center hover:bg-blue-500/20 hover:text-blue-400 transition-all text-muted-foreground"
+                    className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/20 hover:text-white transition-all text-muted-foreground"
                   >
                     <social.icon className="w-5 h-5" />
                   </a>
@@ -250,10 +250,10 @@ export function ContactSection() {
 
             {/* Map Placeholder */}
             <div className="glass-card rounded-xl overflow-hidden h-48 relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <MapPin className="w-10 h-10 text-blue-400 mx-auto mb-2" />
+                  <MapPin className="w-10 h-10 text-white mx-auto mb-2" />
                   <p className="text-muted-foreground text-sm">Interactive Map</p>
                 </div>
               </div>

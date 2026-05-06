@@ -57,7 +57,7 @@ export function Header() {
               alt="Concord Logo"
               width={180}
               height={50}
-              className="h-10 w-auto"
+              className="h-10 w-auto mix-blend-screen"
             />
           </Link>
 
@@ -71,7 +71,7 @@ export function Header() {
                 className="text-sm font-medium text-muted-foreground hover:text-white transition-colors relative group cursor-pointer"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </div>
@@ -80,7 +80,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <Button
               variant="outline"
-              className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500"
+              className="border-white/50 text-white hover:bg-white/10 hover:border-white"
               onClick={() => {
                 const element = document.querySelector("#contact")
                 if (element) element.scrollIntoView({ behavior: "smooth" })
@@ -120,7 +120,7 @@ export function Header() {
             ))}
             <div className="pt-2 border-t border-white/10">
               <Button 
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                className="w-full bg-white hover:bg-white/90 text-black"
                 onClick={() => {
                   const element = document.querySelector("#contact")
                   if (element) element.scrollIntoView({ behavior: "smooth" })

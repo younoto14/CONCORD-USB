@@ -19,7 +19,7 @@ const services = [
       "Legacy system modernization",
       "Performance optimization",
     ],
-    gradient: "from-blue-500 to-cyan-500",
+    gradient: "from-white to-gray-400",
   },
   {
     icon: MessageSquare,
@@ -85,7 +85,7 @@ export function ServicesSection() {
   return (
     <section id="services" className="py-24 md:py-32 relative overflow-hidden bg-secondary/30">
       {/* Background Elements */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
       <div className="absolute top-1/3 left-0 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 lg:px-8" ref={ref}>
@@ -94,7 +94,7 @@ export function ServicesSection() {
           "text-center max-w-3xl mx-auto mb-16 transition-all duration-700",
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         )}>
-          <span className="inline-block px-4 py-1.5 rounded-full glass-card text-sm text-blue-400 mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full glass-card text-sm text-white mb-4">
             Our Services
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
@@ -114,7 +114,7 @@ export function ServicesSection() {
               className={cn(
                 "glass-card rounded-2xl overflow-hidden transition-all duration-700",
                 inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
-                expandedService === index && "ring-2 ring-blue-500/50"
+                expandedService === index && "ring-2 ring-white/50"
               )}
               style={{ transitionDelay: `${200 + index * 100}ms` }}
             >
@@ -136,7 +136,7 @@ export function ServicesSection() {
                 {/* Expand/Collapse Button */}
                 <button
                   onClick={() => setExpandedService(expandedService === index ? null : index)}
-                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
+                  className="flex items-center gap-2 text-white hover:text-white/80 transition-colors text-sm font-medium"
                 >
                   {expandedService === index ? "Show Less" : "Learn More"}
                   <ChevronDown className={cn(
@@ -160,8 +160,8 @@ export function ServicesSection() {
                   <div className="space-y-3 mb-6">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center gap-3">
-                        <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                          <Check className="w-3 h-3 text-blue-400" />
+                        <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                          <Check className="w-3 h-3 text-white" />
                         </div>
                         <span className="text-sm text-white/80">{feature}</span>
                       </div>
@@ -169,7 +169,7 @@ export function ServicesSection() {
                   </div>
 
                   <Button 
-                    className="bg-blue-600 hover:bg-blue-700 text-white group"
+                    className="bg-white hover:bg-white/90 text-black group"
                     onClick={scrollToContact}
                   >
                     Get Started
@@ -196,7 +196,7 @@ export function ServicesSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8"
+              className="bg-white hover:bg-white/90 text-black px-8"
               onClick={scrollToContact}
             >
               Schedule a Consultation
