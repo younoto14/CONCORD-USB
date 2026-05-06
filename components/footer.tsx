@@ -75,7 +75,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-blue-500/20 hover:text-blue-400 transition-all text-muted-foreground"
+                  className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/20 hover:text-white transition-all text-muted-foreground"
                 >
                   <social.icon className="w-4 h-4" />
                 </a>
@@ -148,11 +148,11 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-muted-foreground focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
+                className="flex-1 md:w-64 px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-muted-foreground focus:border-white focus:ring-2 focus:ring-white/20 outline-none transition-all"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+                className="px-6 py-3 bg-white hover:bg-white/90 text-black font-medium rounded-lg transition-colors"
               >
                 Subscribe
               </button>
@@ -174,7 +174,7 @@ export function Footer() {
               className="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors text-sm group"
             >
               Back to Top
-              <span className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
+              <span className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-white/20 transition-colors">
                 <ArrowUp className="w-4 h-4" />
               </span>
             </button>

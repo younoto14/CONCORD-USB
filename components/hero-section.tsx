@@ -54,7 +54,7 @@ export function HeroSection() {
 
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(59, 130, 246, ${particle.opacity})`
+        ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`
         ctx.fill()
       })
 
@@ -69,7 +69,7 @@ export function HeroSection() {
             ctx.beginPath()
             ctx.moveTo(p1.x, p1.y)
             ctx.lineTo(p2.x, p2.y)
-            ctx.strokeStyle = `rgba(59, 130, 246, ${0.1 * (1 - distance / 150)})`
+            ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - distance / 150)})`
             ctx.stroke()
           }
         })
@@ -102,8 +102,8 @@ export function HeroSection() {
 
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-[1]" />
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl z-[1]" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl z-[1]" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl z-[1]" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl z-[1]" />
 
       {/* Moon decoration */}
       <div className="absolute top-20 left-10 w-20 h-20 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-slate-400 to-slate-600 opacity-30 blur-sm z-[1]" />
@@ -113,7 +113,7 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-fade-in">
-            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
             <span className="text-sm text-muted-foreground">Your Privacy Dream 2026</span>
           </div>
 
@@ -136,7 +136,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all group"
+              className="bg-white hover:bg-white/90 text-black px-8 py-6 text-lg rounded-xl shadow-lg shadow-white/20 hover:shadow-white/30 transition-all group"
               onClick={() => scrollToSection("#portfolio")}
             >
               View Our Products
@@ -173,7 +173,7 @@ export function HeroSection() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1.5 h-3 bg-blue-500 rounded-full mt-2 animate-bounce" />
+          <div className="w-1.5 h-3 bg-white rounded-full mt-2 animate-bounce" />
         </div>
       </div>
     </section>
